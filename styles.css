@@ -1,0 +1,25 @@
+body {
+  width: 220px;
+  padding: 15px;
+  font-family: Arial;
+  text-align: center;
+  color: white;
+  background: linear-gradient(90deg, #4b6cb7 0%, #182848 100%);
+  border-radius: 10px;
+  transition: all 0.3s ease;
+}
+
+button {
+  width: 100%;
+  padding: 10px;
+  border: none;
+  background: linear-gradient(90deg, #e3ffe7 0%, #d9e7ff 100%);
+  color: black;
+  cursor: pointer;
+  /* height: 100px; */
+  font-size: larger;
+  font-weight: bold;
+  border-radius: 10px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 4);
+  transition: all 0.3s ease;
+}

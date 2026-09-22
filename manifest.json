@@ -1,0 +1,47 @@
+{
+  "manifest_version": 3,
+  "name": "AI Form Assistant",
+  "version": "1.0",
+
+  "description": "AI powered Google Form autofill assistant",
+
+  "icons": {
+    "16": "images/icon16.png",
+    "48": "images/icon48.png",
+    "128": "images/icon128.png"
+  },
+
+  "permissions": [
+    "activeTab",
+    "scripting"
+  ],
+
+  "host_permissions": [
+    "https://docs.google.com/*"
+  ],
+
+  "action": {
+    "default_popup": "popup.html",
+    "default_icon": {
+      "16": "images/icon16.png",
+      "48": "images/icon48.png",
+      "128": "images/icon128.png"
+    }
+  },
+
+  "content_scripts": [
+    {
+      "matches": [
+        "https://docs.google.com/forms/*"
+      ],
+      "js": ["gemini.js","content.js"]
+    }
+  ],
+
+  "web_accessible_resources": [
+    {
+      "resources": ["profile.json", "images/*"],
+      "matches": ["https://docs.google.com/*"]
+    }
+  ]
+}
