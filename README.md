@@ -12,7 +12,7 @@
 
 ---
 
-## ✨ Updates(v2)
+## ✨ Updates (v2)
 
 * 🤖⚡**More advanced form filling**
 * 🌈  **Animations and improved gradient border** 
